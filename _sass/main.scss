@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+$yellow: #fbca04;
+
+$family-sans-serif: 'Lato', sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+// $primary: $pink;
+// $primary-invert: $pink-invert;
+
+// 4. Import the rest of Bulma
+
+@import "../node_modules/bulma/bulma";
+
+a {
+  color: #3273dc;
+  &:hover {
+    color: $yellow;
+  }
+}
+
+.bg-img {
+  background-image: url(../images/betteryellow.svg);
+  background-position: 0px -1500px;
+  background-repeat:  no-repeat;
+  // background-attachment: fixed;
+  background-size:  cover;
+}
+
+.home-foot {
+ flex-shrink: 0;
+ padding: 20px;
+}
+
+// .index-nav {
+//   height: 200px;
+// }
