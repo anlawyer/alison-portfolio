@@ -9,8 +9,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(express.static('public'));
-app.use(express.static('lib'));
 app.use(express.static('css'));
+app.use(express.static('lib'));
 
 app.set('view engine', 'ejs');
 

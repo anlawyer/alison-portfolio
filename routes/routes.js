@@ -23,11 +23,15 @@ module.exports = function (app) {
     res.render('pages/fastco');
   });
 
-  app.get('/timeline', function (req, res) {
-    res.render('pages/timeline');
+  app.get('/work', function (req, res) {
+    res.render('pages/experience');
   });
 
   app.get('/games', function (req, res) {
     res.render('pages/games');
+  });
+
+  app.get('/wip', function (req, res) {
+    res.render('pages/wip');
   });
 };

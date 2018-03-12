@@ -1,32 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html class="has-navbar-fixed-top">
 <head>
   <% include ../partials/head %>
 </head>
 <body>
-  <section class="hero is-fullheight is-default is-bold">
-    <% include ../partials/header %>
-    <div class="hero-body">
-      <div class="container">
-        <div class="columns is-multiline">
-          <div class="column is-3 is-offset-5">
-            <!-- <div class="level">
-              <div class="level-left">-->
-                <!-- <div class="level-item">  -->
-                  <div class="title is-3">
-                    Gotta Go!
-                  </div>
-                <!-- </div> -->
-              <!-- </div>
-              <div class="level-right">
-                <div class="level-item"> -->
-                  <!-- <a href="https://gotta-go.herokuapp.com/">Check out Gotta live</a> -->
-                  <!-- <a href="https://github.com/mford008/gotta-go-react">Source code</a> -->
-                <!-- </div>
+  <% include ../partials/header %>
+  <section>
+    <div class="container">
+      <div class="columns is-multiline">
+        <div class="column is-12">
+          <div>
+            <figure class="bg-img">
+              <br />
+              <br />
+              <div class="has-text-centered">
+                <h2 class="title is-3">
+                  Gotta Go!
+                </h2>
               </div>
-            </div> -->
+              <br />
+              <br />
+              <br />
+            </figure>
           </div>
           <div class="column is-8 is-offset-2">
+            <hr />
             <div class="title is-5">
               The Problem:
             </div>
@@ -42,7 +40,7 @@
             <div class="title is-5">
               The Solution:
             </div>
-            <div class="">
+            <div>
               <p>
                 <a href="https://gotta-go.herokuapp.com/">Gotta Go</a>
                 aims to solve that problem by crowdsourcing information about
@@ -50,25 +48,6 @@
                 Our app allows users to see all the locations of restrooms input by
                 other users, and allows them to add new locations themselves.
               </p>
-              <!-- <br /> -->
-              <!-- <p>
-                Here's the
-                <a href="https://github.com/mford008/gotta-go-react">source code</a> for our React
-                version, and the <a href="https://github.com/anlawyer/GottaGo">code</a> for our first iteration.
-              </p>
-              <br />
-              <p>
-                Here are the links for the working versions of the apps.
-                <br />
-                Version 1: <a href="https://murmuring-basin-97486.herokuapp.com/">Gotta Go!</a>
-                <br />
-                Version 2: <a href="https://gotta-go.herokuapp.com/">Gotta Go with React</a>
-              </p>
-              <br />
-              <p>
-                We recommend resizing your browser to be about the size of a cell phone or
-                opening your browser console and resizing the viewport there!
-              </p> -->
             </div>
           </div>
           <!-- <div class="column is-4 is-offset-1">
@@ -174,8 +153,6 @@
               structure whenever we got stuck to remember how things should
               be arranged.
             </p>
-          <!-- </div> -->
-          <!-- <div class="column is-8 is-offset-2"> -->
             <div class="column is-12">
               <figure class="image">
                 <img src="../../images/gg2-components.png">
@@ -206,23 +183,6 @@
               we were able to avoid any major merge conflicts and
               were able to keep track of our progress very easily.
             </p>
-              <!-- Here's the
-              <a href="https://github.com/mford008/gotta-go-react">source code</a> for our React
-              version, and the <a href="https://github.com/anlawyer/GottaGo">code</a> for our first iteration.
-            </p>
-            <br />
-            <p>
-              Here are the links for the working versions of the apps.
-              <br />
-              Version 1: <a href="https://murmuring-basin-97486.herokuapp.com/">Gotta Go!</a>
-              <br />
-              Version 2: <a href="https://gotta-go.herokuapp.com/">Gotta Go - React</a>
-            </p>
-            <br />
-            <p>
-              We recommend resizing your browser to be about the size of a cell phone. You can also
-              open your browser console and resize the viewport to a phone size!
-            </p> -->
             <br />
             <p>
               The app is intended to be used on cell phones, as one likely will not have
@@ -230,7 +190,6 @@
               A React Native version of the app is currently being developed.
             </p>
           </div>
-          <!-- </div> -->
           <!-- bottom nav -->
           <div class="column is-12">
             <div class="level is-mobile">
@@ -255,17 +214,15 @@
                 </div>
               </div>
             </div>
+          <!-- closing bottom-nav -->
           </div>
-        <!-- closing columns -->
+        <!-- closing column-is-12 -->
         </div>
-      <!-- closing container -->
-      </div>
-    <!-- closing hero-body -->
+      <!-- closing columns -->
     </div>
-    <% include ../partials/footer %>
-    <!-- <figure class="image">
-      <img src="../../images/bottom-bg.png">
-    </figure> -->
+  <!-- closing container -->
+  </div>
+  <% include ../partials/footer %>
   </section>
 </body>
 </html>

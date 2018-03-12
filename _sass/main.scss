@@ -6,6 +6,17 @@ $yellow: #fbca04;
 
 $family-sans-serif: 'Lato', sans-serif;
 
+$tabs-link-hover-color: $yellow;
+$tabs-border-bottom-width: 0px;
+
+$link-hover-border: $yellow;
+$link-focus-border: $yellow;
+$link-active-border: $yellow;
+
+$box-radius: $radius-large;
+$box-shadow: 0 2px 3px rgba($yellow, 0.3), 0 0 0 1px rgba($black, 0.1);
+// $box-background-color: $yellow;
+
 // 3. Set the derived variables
 // Use the new pink as the primary color
 // $primary: $pink;
@@ -23,18 +34,25 @@ a {
 }
 
 .bg-img {
-  background-image: url(../images/betteryellow.svg);
+  background-image: url(../images/portfolio-top2.png);
   background-position: top center;
   background-repeat:  no-repeat;
-  // background-attachment: fixed;
   background-size:  cover;
 }
 
-.home-foot {
- flex-shrink: 0;
- padding: 20px;
+.wip-bg {
+  background-image: url(../images/betteryellow.svg);
+  background-position: center;
+  background-repeat:  no-repeat;
+  background-size:  cover;
 }
 
-// .index-nav {
-//   height: 200px;
-// }
+.landing-buttons{
+  margin: 50px 0px 50px 0px;
+}
+
+.foot {
+ flex-shrink: 0;
+ padding: 25px;
+ margin-top: 50px;
+}

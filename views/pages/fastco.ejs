@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+  <% include ../partials/head %>
+</head>
+<body>
+  <% include ../partials/header %>
+  <section>
+    <div class="container">
+      <div class="columns is-multiline">
+        <div class="column is-12">
+          <div>
+            <figure class="bg-img">
+              <br />
+              <br />
+              <div class="has-text-centered">
+                <h2 class="title is-3">
+                  Fast Co. Scraper
+                </h2>
+              </div>
+              <br />
+              <br />
+              <br />
+            </figure>
+          </div>
+          <div class="column is-8 is-offset-2">
+            <hr />
+            <p>
+              This is an application that scrapes articles from fastcompany.com
+              and allows users to save and comment on them.
+            </p>
+            <br />
+            <p>
+              When the site is opened, Cheerio scrapes the Fast Company website
+              and displays the new articles on the landing page. Another scrape
+              can be triggered at any time by clicking the "Get news from Fast Co" in
+              the upper left-hand corner. Users can then save the articles they like,
+              and access them on the "saved" page. They can comment on each saved article,
+              delete comments and unsave articles as well.
+            </p>
+            <br />
+            <p>
+              All the articles and comments are stored in a MongoDB database using
+              the Mongoose ORM. The frontend is built with Bulma, a CSS framework based
+              on Flexbox, and Handlebars.js, an HTML templating engine. The backend is
+              built with Node.js/Express.js, and features Axios for in-app routing and
+              the scraping call.
+            </p>
+            <br />
+            <p>
+              Use the app <a href="https://shielded-coast-38911.herokuapp.com/">live</a>,
+              or check out the <a href="https://github.com/anlawyer/FastCo-Scraper">source code</a>.
+            </p>
+          </div>
+          <div class="column is-8 is-offset-2">
+            <figure class="image">
+              <img src="../../images/fc-screencast.gif">
+            </figure>
+          </div>
+          <div class="column is-12">
+            <div class="level is-mobile">
+              <div class="level-left">
+                <div class="level-item">
+                  <a class="button" href="/nyt">
+                    <span class="icon">
+                      <i class="fa fa-2x fa-angle-left"></i>
+                    </span>
+                    <span>NYT Article Search</span>
+                  </a>
+                </div>
+              </div>
+              <div class="level-right">
+                <div class="level-item">
+                  <a class="button" href="/games">
+                    <span>Games</span>
+                    <span class="icon">
+                      <i class="fa fa-2x fa-angle-right"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- closing columns -->
+        </div>
+      <!-- closing container -->
+      </div>
+    <!-- closing hero-body -->
+    </div>
+    <% include ../partials/footer %>
+  </section>
+</body>
+</html>

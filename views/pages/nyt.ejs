@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+  <% include ../partials/head %>
+</head>
+<body>
+  <% include ../partials/header %>
+  <section>
+    <div class="container">
+      <div class="columns is-multiline">
+        <div class="column is-12">
+          <div>
+            <figure class="bg-img">
+              <br />
+              <br />
+              <div class="has-text-centered">
+                <h2 class="title is-3">
+                  NYT Search
+                </h2>
+              </div>
+              <br />
+              <br />
+              <br />
+            </figure>
+          </div>
+          <div class="column is-8 is-offset-2">
+            <hr />
+            <p>
+              This is an single page, MERN-stack application that finds articles
+              from the New York Times using their search API.
+            </p>
+            <br />
+            <p>
+              Users can search for a topic and save articles from the results on
+              the "search" page. They can also delete articles that have been saved
+              from the "saved" page. I enjoy writing straightforward applications
+              that do a good job at the task they are developed for!
+            </p>
+            <br />
+            <p>
+              The app features a Node.js/Express.js backend with a MongoDB/Mongoose
+              database (using mLab while deployed on Heroku). I used Axios for in-app
+              routing and for calling the NYT API with user-input search terms.
+            </p>
+            <br />
+            <p>
+              The main purpose of this application was to get comfortable with writing
+              in React. Completing the project helped me see the power of React for
+              writing frontend code and enabled me to better contribute to other
+              applications and team projects.
+            </p>
+            <br />
+            <p>
+              Use the app <a href="https://stark-caverns-91687.herokuapp.com/">live</a>,
+              or check out the <a href="https://github.com/anlawyer/NYT-Article-Search">source code</a>.
+            </p>
+          </div>
+          <div class="column is-8 is-offset-2">
+            <figure class="image">
+              <img src="../../images/nyt-search.gif">
+            </figure>
+          </div>
+          <div class="column is-12">
+            <div class="level is-mobile">
+              <div class="level-left">
+                <div class="level-item">
+                  <a class="button" href="/gottago">
+                    <span class="icon">
+                      <i class="fa fa-2x fa-angle-left"></i>
+                    </span>
+                    <span>Gotta Go</span>
+                  </a>
+                </div>
+              </div>
+              <div class="level-right">
+                <div class="level-item">
+                  <a class="button" href="/fastco">
+                    <span>FastCo Scraper</span>
+                    <span class="icon">
+                      <i class="fa fa-2x fa-angle-right"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- closing columns -->
+        </div>
+      <!-- closing container -->
+      </div>
+    <!-- closing hero-body -->
+    </div>
+    <% include ../partials/footer %>
+  </section>
+</body>
+</html>
